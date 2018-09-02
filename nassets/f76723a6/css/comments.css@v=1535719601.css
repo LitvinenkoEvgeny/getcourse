@@ -1,0 +1,331 @@
+.comments-tree .user-image-wrapper { float: left; margin-right: 10px }
+.comments-tree, .comments-tree a { font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px}
+.comments-tree a.user-profile-link {
+    color: #333;
+}
+
+.comments-tree {
+    font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif; font-size: 14px;
+    font-weight: normal;
+}
+
+.comments-tree .files img {
+    width: 30%;
+    max-width: 200px;
+    margin-bottom: 5px;
+}
+.comments-tree.float-images .comment-files-widget {
+    clear: both;
+    overflow: hidden;
+}
+.comments-tree.float-images .file {
+    float: left;
+    margin-right:10px;
+    max-width: 200px;
+}
+.comments-tree.float-images .files img {
+    width: 100%;
+}
+
+.comments-tree .comment .title {
+    font-weight: bold;
+}
+.comments-tree .level-1 .comment .user-image-wrapper {
+    width: 50px;
+    height: 50px;
+}
+.comments-tree .level-1 .comment-wrapper {
+    padding: 10px 10px 0 10px;
+    /*margin-left: 10px;*/
+    padding-top: 5px;
+    background: none;
+}
+
+.chat-widget .comments-tree .level-1 .comment-wrapper {
+    padding: 0 10px 0 10px !important;
+}
+
+.comments-tree .comment-wrapper {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.comments-tree .level-2 .comment-wrapper {
+    margin-bottom: 2px;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+a.more-comments.level-2 {
+    margin-left: 60px;
+}
+
+.comments-tree .level-2 .comment-wrapper {
+    background-color: #f9f9f9;
+    margin-left: 60px;
+}
+
+.chat-widget .comments-tree .level-2 .comment-wrapper, .chat-widget a.more-comments.level-2 {
+    margin-top: 10px;
+    background: none;
+    margin-left: 0 !important;
+}
+
+.comments-tree .more {
+    padding-left: 10px;
+}
+
+.comments-tree .level-1 > .comment-wrapper > .comment .text {
+    padding-bottom: 15px
+
+}
+
+.comments-tree .level-1 .comment-wrapper .comment-form-wrapper {
+    padding: 0px 10px 0 0px;
+    background: none;
+    margin-left: 60px;
+}
+
+.chat-widget .comments-tree .level-1 .comment-wrapper .comment-form-wrapper {
+    margin-left: 0 !important;
+}
+
+.comments-tree .level-2 .comment-wrapper .user-image-wrapper, .level-1 .comment-form-wrapper .user-image-wrapper {
+    width: 28px;
+    height: 28px;
+    margin-left: 7px;
+}
+.comments-tree .user-image-wrapper img { width: 100%;}
+.comments-tree .level-2 .comment-wrapper .title {
+    /*font-weight: normal;*/
+}
+
+.comments-tree .text {
+    line-height: 18px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.comments-tree .typing-text {
+    margin: -15px 10px 0 10px;
+    height: 20px;
+    font-size: 0.8em;
+}
+/*.emoji-button {*/
+    /*right: 400px !important;*/
+/*}*/
+.comment-form-wrapper {
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: #F0F0F0;
+    padding: 20px 10px 20px 10px;
+}
+
+.comment-form-wrapper .new-comment {}
+.comment-form-wrapper .new-comment .btn-send { display: none; }
+.comment-form-wrapper .new-comment .download-csv { display: none; }
+.comment-form-wrapper .new-comment-textarea { width: 100%; border: 1px solid #ddd; padding-left: 4px;}
+.comment-form-wrapper  .online-users-count { display: block; float: left; margin-top: 10px; padding-top: 6px; padding-left: 10px; color: #999; }
+
+.comment-form-wrapper .new-comment .btn-send {
+    border-radius: 0px;
+    margin-top: 5px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+}
+.comment-form-wrapper .new-comment .btn-delete-comments {
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+.comment-form-wrapper .file-uploader {
+    margin-top: 5px;
+    float: left;
+    margin-left: 5px;
+}
+
+.comment .uploadifive-button input, .comment-form-wrapper .uploadifive-button input {
+    cursor: pointer;
+}
+
+
+.comment-form-wrapper .new-comment.active .btn-send { display: block; margin-top: 10px; }
+.comment-form-wrapper .new-comment.active-always .download-csv { display: block; margin-top: 10px; font-size: 12px; }
+.comment-form-wrapper .new-comment.active-always .btn-send { display: block; margin-top: 10px; }
+
+.comment-form-wrapper .new-comment.with-file .comment-attach-file-link { display: none;}
+
+.comment-form-wrapper .new-comment .textarea-block { overflow: hidden;}
+.comment-form-wrapper .new-comment .textarea-block > div { position: relative; }
+.comment-form-wrapper .comment-attach-file-link { color: #bbb; font-size: 18px; cursor: pointer}
+.comment-wrapper .files.active { padding-top: 10px; padding-bottom: 0px}
+
+@media screen and (max-width: 767px) {
+    .download-csv {display: none !important;}
+
+    .gc-comment-form .user-profile-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .gc-comment .b-comment-reply {display: none;}
+    .gc-comment .gc-comment-form.comment-form-wrapper {display: none !important;}
+}
+
+.level-1 .comment-form-wrapper  .user-image-wrapper { display: none}
+
+.comment-user-type {
+    color: #27ae60;
+}
+
+.attach-file-button-container {
+    position: absolute !important;
+    top:4px;
+    right:30px;
+}
+
+.edit-attach-file-button-container {
+    position: absolute !important;
+    top:4px;
+    right:5px;
+}
+
+.pseudo-link {
+    cursor: pointer;
+    color: #006caf;
+}
+
+.pseudo-link:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+.pause-wrapper {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.chat-widget {
+    width: 400px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color:white;
+    z-index:900;
+    border: 1px #F0F0F0 solid;
+}
+.chat-widget.chat-collapsed {
+    background: #F0F0F0;
+    width: 30px;
+    cursor: pointer;
+}
+.chat-widget .chat-expand-btn {
+    display: none;
+}
+.chat-widget.chat-collapsed .chat-expand-btn {
+    display: block;
+}
+
+.chat-widget .chat-collapse-btn {
+    position: absolute;
+    top: 5px;
+    right: 16px;
+    background: #FFF;
+}
+.chat-widget.chat-collapsed .chat-collapse-btn {
+    display: none;
+}
+
+.chat-widget.chat-collapsed .comments-tree {
+    display: none;
+}
+.chat-expand-btn {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 5px;
+}
+
+.chat-widget .user-image-wrapper, .chat-widget .user-payed-label, .chat-widget .fa-graduation-cap, .chat-widget .comment-time {
+    display:none;
+}
+.chat-widget .title .text:after {
+    content: ":";
+}
+.chat-widget, .chat-widget .comments-tree-wrapper, .chat-widget .comments-tree
+{
+    height: 100%;
+}
+.chat-widget .comments-container {
+    overflow: auto;
+    /*padding-bottom: 90px;*/
+}
+.chat-widget .comments-container .comments-top-level {
+    margin-bottom: 120px;
+}
+.chat-widget .gc-comment-form {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+.gc-bottom-margin.chat-widget .gc-comment-form {
+    margin-bottom: 44px;
+}
+.chat-widget .b-like-and-subscribe-notifications {
+    display: none;
+}
+.chat-widget .title, .chat-widget .comments .text, .chat-widget .text .main, .chat-widget .text .main  .text-content{
+    display: inline;
+}
+.chat-widget .comment {
+    overflow: hidden;
+}
+.chat-widget .comment-files-widget {
+    overflow: hidden;
+}
+.chat-widget .file {
+    float: left;
+    max-width: 100px;
+    margin-right: 20px;
+}
+.chat-widget .comments-tree .files img {
+    width: 100%;;
+}
+.chat-widget .pause-wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+.chat-widget .comment-form-wrapper .new-comment .download-csv {
+    display: none !important;
+}
+.chat-widget .date-divider {
+    color: #ccc;
+    text-align: center;
+    border-bottom: 1px solid #F0F0F0;
+    line-height: 0.1em;
+    margin: 10px;
+}
+.chat-widget .date-divider span {
+    background:#fff;
+    padding:0 10px
+}
+.comments-tree .worker .text {
+    color: #337ab7;
+}
+@media screen and (max-width: 1050px) {
+    .chat-widget {
+        width: 310px;
+    }
+}
+.gc-user-comment--10 .comment .title {
+    display: none;
+}
+.comments-tree .gc-user-comment--10.level-1 .comment-wrapper {
+    background: lightyellow;
+    padding: 5px !important;
+}
