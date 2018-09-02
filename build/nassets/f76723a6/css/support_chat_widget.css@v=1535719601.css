@@ -1,0 +1,152 @@
+.support-chat-window {
+  position: fixed;
+  width: 380px;
+  height: 480px;
+  right: 0;
+  bottom: 44px;
+  top: auto;
+  z-index: 1500;
+  background-color: #F0F0F0;
+  border: 0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
+  .support-chat-window .support-chat-header {
+    height: 44px;
+    background-color: #3F72DB;
+    border: 0;
+    padding: 0;
+    cursor: pointer; }
+    .support-chat-window .support-chat-header .btn-close {
+      top: 1px;
+      left: 1px;
+      width: 19px;
+      height: 19px;
+      margin: 10px;
+      background: url("../../../public/img/cross.png") no-repeat; }
+    .support-chat-window .support-chat-header .caption {
+      margin: 10px 12px;
+      color: #FFFFFF;
+      font-weight: 300; }
+    .support-chat-window .support-chat-header .thumb {
+      color: #FFFFFF;
+      font-weight: 300;
+      width: 44px;
+      height: 44px;
+      background: url("../../../public/img/bubble.png") no-repeat center; }
+  .support-chat-window .conversation-widget {
+    background: #F0F0F0;
+    /*other user comment*/
+    /* own comment*/ }
+    .support-chat-window .conversation-widget .own-user-comment .comment > .text .text-content, .support-chat-window .conversation-widget .my-comment .comment > .text .text-content {
+      background-color: #effdde; }
+  .support-chat-window .user-image-wrapper, .support-chat-window .emoji-button, .support-chat-window .download-csv {
+    display: none !important; }
+  .support-chat-window .comment-form-wrapper {
+    padding: 0; }
+    .support-chat-window .comment-form-wrapper .new-comment .btn-send {
+      text-transform: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      background: transparent;
+      border: none;
+      margin: -10px 10px;
+      padding: 0;
+      height: 20px;
+      line-height: 20px;
+      color: #337AB7;
+      display: none;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 14px; }
+    .support-chat-window .comment-form-wrapper .file-uploader {
+      margin-left: 60px; }
+  .support-chat-window .textarea-block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FBFBFB; }
+    .support-chat-window .textarea-block .new-comment-textarea {
+      border: none;
+      background: transparent;
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 100px;
+      max-height: 320px;
+      overflow-wrap: break-word;
+      resize: none !important;
+      height: 44px;
+      min-height: 44px !important; }
+      .support-chat-window .textarea-block .new-comment-textarea ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        line-height: 44px; }
+      .support-chat-window .textarea-block .new-comment-textarea ::-webkit-input-placeholder {
+        /* Webkit */
+        line-height: 44px; }
+      .support-chat-window .textarea-block .new-comment-textarea :-ms-input-placeholder {
+        /* IE */
+        line-height: 44px; }
+    .support-chat-window .textarea-block .attach-file-button-container {
+      position: absolute !important;
+      width: 44px;
+      top: 50%;
+      margin: -12px 0 0 5px;
+      left: 0; }
+      .support-chat-window .textarea-block .attach-file-button-container .fa-camera {
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+        -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1); }
+      .support-chat-window .textarea-block .attach-file-button-container .fa-camera::before {
+        content: "\f0c6";
+        font-size: 2em; }
+      .support-chat-window .textarea-block .attach-file-button-container .uploadifive-button {
+        width: 44px !important;
+        height: 44px !important; }
+    .support-chat-window .textarea-block textarea {
+      outline: none;
+      padding-top: 17px; }
+  .support-chat-window .comments-tree-wrapper .comment-time {
+    float: right;
+    display: inline-block;
+    min-width: 40px;
+    width: 40px;
+    text-align: right; }
+  .support-chat-window .comments-tree-wrapper .comment .text {
+    padding-bottom: 0 !important; }
+  .support-chat-window .comments-tree-wrapper .date-divider {
+    text-align: center;
+    font-size: 16px; }
+  .support-chat-window.gc-user-guest {
+    bottom: 0; }
+
+.talks-widget-button {
+  /*display: none;*/ }
+
+.support-chat-window:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  width: 100%;
+  height: 95%; }
+
+@media (max-width: 768px) {
+  .support-chat-window {
+    width: 100%;
+    height: 100%;
+    top: 0; }
+    .support-chat-window .gc-comment-form {
+      position: fixed;
+      bottom: 0; } }
+@media screen and (min-width: 717px) {
+  .support-chat-window.gc-user-guest > div:first-child {
+    margin-top: 0 !important; }
+  .support-chat-window .support-chat-header {
+    margin-top: 0 !important; } }
+#gcAccountUserMenu .slideOutLeft.animated .gc-account-user-tape-link {
+  top: auto;
+  left: 0; }
+
+/*# sourceMappingURL=support_chat_widget.css.map */

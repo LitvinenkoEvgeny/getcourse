@@ -1,0 +1,357 @@
+@import "common/variables"
+@import "common/mixins"
+@import "common/animations"
+
+.header
+  display: flex
+  +e('logo')
+    width: 150px
+    height: 100px
+    margin-left: auto
+    margin-right: 20px
+
+.button
+  display: inline-block
+  font-family: 'Roboto', sans-serif
+  min-height: 60px
+  border-radius: 0
+  font-size: 16px
+  text-align: center
+  white-space: nowrap
+  vertical-align: middle
+  font-weight: bold
+  cursor: pointer
+  box-sizing: border-box
+  outline: none
+  padding: .1em 4em
+  background: $brandRedColor !important
+  border: none
+  color: #fff
+  text-decoration: none
+
+  +m('yellow')
+    background: #ffc400 linear-gradient(#ffea00, #ffc400)
+    box-shadow: inset #ffd500 0 -1px 1px, inset 0 1px 1px #ffea00, #ffd500 0 0 0 1px, rgba(0, 0, 0, .3) 0 2px 5px
+
+    &:hover
+      background: #ffc400 linear-gradient(#ffc400, #ffcc00)
+
+  +m('with-radius')
+    border-radius: 4px
+
+  +m('mt20')
+    margin-top: 20px
+
+  +fastTransition(background color border-color, .1s)
+
+  &:hover
+    background: #fff !important
+    color: $brandRedColor !important
+    border-color: $brandRedColor
+    text-decoration: none
+
+  +e('map-icon')
+    margin-right: 15px
+
+  +e('descr')
+    display: inline-block
+    margin-left: 20px
+
+  +e('map-icon')
+    display: inline-block
+
+  +e('descr-text')
+    display: inline-flex
+    align-items: center
+
+  +e('wrp')
+    display: flex
+
+.icon
+  +m('map')
+    fill: #fff
+
+.text
+  +m('red-border-left')
+    border-left: 3px solid $brandRedColor
+
+  +m('pl20')
+    padding-left: 20px
+
+.what-happen
+  position: relative
+
+  +e('img')
+    height: 500px
+    margin: 0 auto
+    display: block
+
+  +e('header')
+    font-size: em(100, 24) !important
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-36%, 0)
+    font-weight: bold
+    text-transform: lowercase
+
+  +e('description')
+    padding: 50px 70px 0
+    font-size: .9em
+
+.centered-img
+  +e('wrp')
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)
+
+.rounded-item
+  flex-direction: column !important
+
+  +e('img')
+    width: 100px
+    height: 100px
+    flex: 50%
+    align-self: center
+
+.block
+  +m('container')
+    display: flex
+
+  +m('left')
+    flex: 35%
+
+  +m('right')
+    flex: 65%
+    display: flex
+    flex-flow: wrap
+
+  +m('half')
+    flex: 50% !important
+
+  +m('fx50p')
+    flex: 30% !important
+
+    +adaptivity(tablet)
+      flex: 45% !important
+
+    +adaptivity(phone)
+      flex: 45% !important
+
+.plan
+  +e('list')
+    display: flex
+    flex-wrap: wrap
+    list-style-type: none
+
+  +e('item')
+    flex: 1 1 50%
+    padding: 10px
+
+  +e('item-counter')
+    display: none
+
+  +e('item-header')
+    display: inline
+    font-size: 1.8em
+    position: relative
+
+    &:before
+      content: ''
+      display: inline-block
+      position: absolute
+      top: 50%
+      left: -30px
+      transform: translate(-50%, 0)
+      margin-left: 15px
+      height: 4px
+      width: 25px
+      background: $brandRedColor
+
+.course-start
+  padding: 10px
+  display: flex
+  flex-direction: column
+
+  +e('date')
+    display: flex
+    justify-content: space-between
+    height: 120px
+
+  +e('day')
+    align-self: center
+    color: $brandRedColor
+    font-size: 5em
+    font-weight: bold
+    margin-left: 20px
+
+  +e('month')
+    align-self: flex-start
+    font-size: 3em
+
+  +e('title')
+    font-size: 2em
+    text-align: center
+
+  +e('descr')
+    margin-top: 40px
+    font-size: .9em
+    text-align: center
+
+.text
+  +m('bold')
+    font-weight: bold
+
+.icon
+  +m('chevron')
+    border: 2px solid #e0e0e0
+    border-radius: 50%
+    width: 30px
+    height: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+  +m('chevron-left')
+    svg
+      transform: rotate(-180deg)
+      fill: lighten(#e0e0e0, 50%) !important
+
+  +m('instagram')
+    width: 30px
+    height: 30px
+    display: inline-block
+
+.social-item
+  display: inline-flex
+  align-items: center
+
+  +e('link')
+    margin-left: 15px
+
+.reviews
+  +e('header')
+    text-align: center
+    text-transform: uppercase
+
+  +e('heading')
+    font-size: 3em
+    color: #48a7ff
+    font-weight: bold
+
+  +e('subheading')
+    font-size: 2.3em
+    font-weight: bold
+
+  +e('wrp')
+    width: 100%
+
+  +e('list')
+    padding: 0
+    display: block
+
+  +e('list-item')
+    padding: 30px
+
+  +e('item-wrp')
+    border-top: 5px solid #48A7FF
+
+  +e('item-review')
+    display: flex
+    padding: 10px
+    box-shadow: 0px 7px 31px 4px #e0e0e0
+
+  +e('item-before-after')
+    position: relative
+    text-align: center
+    margin-top: 50px
+
+  +e('item-before')
+    padding-bottom: 15px
+
+  +e('item-item-counter')
+    display: flex
+    justify-content: space-between
+    padding-bottom: 15px
+    border-bottom: 1px solid #e0e0e0
+
+  +e('item-text-row')
+    margin: 10px 0 !important
+
+  +e('item-arrow')
+    position: absolute
+    top: 60%
+    left: 0
+    transform: translate(0, -50%) scale(0.7) rotate(-10deg)
+
+  +e('item-arrow-left')
+    &:hover
+      cursor: pointer
+
+  +e('item-arrow-right')
+    &:hover
+      cursor: pointer
+
+  +e('item-descr')
+    flex: 30%
+    display: flex
+    flex-direction: column
+
+  +e('item-photo')
+    width: 70%
+    margin: 0 auto
+    height: 150px
+
+  +e('item-main-info')
+    flex: 70%
+
+.prices
+  +e('list')
+    padding: 0
+    display: flex
+    justify-content: center
+
+  +e('item')
+    flex: 1 1 100px !important
+    width: 100px
+    margin: 20px
+    display: inline-block
+    text-align: left
+    position: relative
+    background: url('../img/plan-bg.png') no-repeat
+    background-size: 110%
+    background-position: -10px 0
+    
+
+  +e('year-plan')
+    background: #000
+    position: absolute
+    transform: translate(0, -100%)
+    display: flex
+
+  +e('button')
+    padding: 25px
+
+  +e('button-wrp')
+    text-align: center
+
+  +e('month')
+    font-size: 1.2em
+
+  +e('heading')
+    font-size: 2em
+
+#blockCover36762177
+  +adaptivity(tablet)
+    min-height: 50vh !important
+  +adaptivity(phone)
+    min-height: 30vh !important
+
+#image7687567
+  display: none
+
+#image5206671
+  display: none
+
+.flex-row:not(.flex-not-line) > *
+  +adaptivity(phone)
+    flex: 45% !important

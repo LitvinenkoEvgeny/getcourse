@@ -1,0 +1,16 @@
+{
+  "name": "Landing",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "LitvinenkoEvgenyWebDev <yourbisnesspartner@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.1",
+    "normalize.css": "^8.0.0"
+  }
+}
